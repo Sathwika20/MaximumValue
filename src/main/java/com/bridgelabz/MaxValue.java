@@ -14,6 +14,18 @@ public class MaxValue {
             return (z);
 
     }
+    public static Float givenMaxValue(Float x, Float y, Float z) {
+        if(x.compareTo(y) > 0) {
+            if(x.compareTo(z) > 0) {
+                return (x);
+            }  else {
+                return (z);
+            }
+        } else if (y.compareTo(z) > 0) {
+            return (y);
+        } else
+            return (z);
 
+    }
 
 }
