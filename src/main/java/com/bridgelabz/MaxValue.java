@@ -1,7 +1,7 @@
 package com.bridgelabz;
 
 public class MaxValue {
-    public static int givenMaxValue(Integer x, Integer y, Integer z) {
+    public static String givenMaxValue(String x, String  y, String z) {
         if(x.compareTo(y) > 0) {
             if(x.compareTo(z) > 0) {
                 return (x);

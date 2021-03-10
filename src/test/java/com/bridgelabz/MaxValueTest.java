@@ -7,21 +7,21 @@ public  class MaxValueTest {
     @Test
     public void when_first_position_is_greater_should_return_true() {
          MaxValue maxvalue  = new MaxValue();
-         int max = maxvalue.givenMaxValue(7,5,3);
-         Assert.assertEquals(7,max);
+         String max = maxvalue.givenMaxValue("red","pink","orange");
+         Assert.assertEquals("red",max);
     }
 
     @Test
     public void when_second_position_is_greater_should_return_true() {
         MaxValue maxValue = new MaxValue();
-        int max = maxValue.givenMaxValue(1,5,2);
-        Assert.assertEquals(5,max);
+        String max = maxValue.givenMaxValue("blue","white","green");
+        Assert.assertEquals("white", max);
     }
 
     @Test
-    public void when_third_position_is_greater_should_reurn_true() {
+    public void when_third_position_is_greater_should_return_true() {
         MaxValue maxValue = new MaxValue();
-        int max = maxValue.givenMaxValue(1,2,3);
-        Assert.assertEquals(3,max);
+        String max = maxValue.givenMaxValue("black","purple","yellow");
+        Assert.assertEquals("yellow",max);
     }
 }
